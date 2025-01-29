@@ -1,0 +1,45 @@
+general.import = ["~/.config/alacritty/themes/tokyonight-storm.toml"]
+
+[env]
+#TERM = "tmux-256color"
+TERM = "alacritty-direct"
+
+#[terminal.shell]
+#program = "tmux"
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrainsMonoNerdFont"
+style = "Regular"
+
+[window]
+decorations = "Full"
+#decorations = "None"
+opacity = 1
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 133
+lines = 40
+
+[window.padding]
+x = 5
+y = 5
+
+[cursor]
+thickness = 0.17
+
+[cursor.style]
+shape = "beam"
+blinking = "always"
+
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+]
+
+#[shell]
+#args = ["-l", "-c", "zellij attach --index 0 || zellij"]
+#program = "/bin/bash"
